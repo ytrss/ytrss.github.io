@@ -9,9 +9,17 @@
     <title>YouTube RSS status</title>
 </head>
 <body>
-    <div id="content">
-        <div id="title">YouTube's RSS feed is <strong>loading...</strong></div>
-        <div id="timer">No update!</div>
+    <div class="content">
+        <div class="title">YouTube's RSS feed is <strong>loading...</strong></div>
+        <div class="timer">No update!</div>
+        <div class="graph">
+            <div class="status"></div>
+            <div class="dates">
+                <div class="date start">No data!</div>
+                <div class="date end">No data!</div>
+            </div>
+        </div>
+        <a class="download" href="https://raw.githubusercontent.com/ytrss/ytrss.github.io/refs/heads/main/history.json" download="youtube_rss_status_history.json">Download history</a>
     </div>
 </body>
 </html>

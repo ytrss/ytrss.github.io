@@ -11,27 +11,73 @@ body {
     font-size: 16px;
     color: white;
     line-height: 1.25;
-}
-
-#content {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
     padding: 32px;
 }
 
-#title {
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
     font-size: 24px;
 }
 
-#title.online {
+.title.online {
     color: greenyellow;
 }
 
-#title.offline {
+.title.offline {
     color: red;
 }
 
-#timer {
+.timer {
     color: gray;
+}
+
+.graph {
+    margin: 32px 0;
+}
+
+.graph .status {
+    height: 48px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph .status .group {
+    width: 8px;
+    height: 75%;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.graph .status .group.online {
+    background-color: greenyellow;
+}
+
+.graph .status .group.offline {
+    background-color: red;
+    height: 100%;
+}
+
+.graph .dates {
+    display: flex;
+    gap: 16px;
+}
+
+.graph .dates .date {
+    flex-grow: 1;
+    padding: 8px 0;
+    overflow-y: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: gray;
+}
+
+.graph .dates .date.end {
+    text-align: right;
 }

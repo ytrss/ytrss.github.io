@@ -1,11 +1,13 @@
 name: Update RSS feed history
 on:
+  schedule:
+     - cron: "*/15 * * * *"
   workflow_dispatch:
 jobs:
   update:
     permissions:
       contents: write
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7

@@ -1,6 +1,6 @@
 async function get_history() {
-    /* const url = "../history.json"; */
-    const url = "https://raw.githubusercontent.com/ytrss/ytrss.github.io/refs/heads/main/history.json";
+    /* const url = "history.json"; */
+    const url = "https://raw.githubusercontent.com/ytrss/ytrss.github.io/refs/heads/main/static/history.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {

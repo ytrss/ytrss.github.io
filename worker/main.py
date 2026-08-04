@@ -16,7 +16,7 @@ channel_ids = [
 ]
 
 def main() -> None:
-    history_path = "./history.json"
+    history_path = "static/history.json"
     with open(history_path, "r") as file:
         history = json.load(file)
     current_date = datetime.datetime.now(datetime.UTC)

@@ -19,8 +19,8 @@ jobs:
         run: python worker/main.py
       - name: Commit the update
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add static/history.json
           git commit -m "GitHub Actions updated history.json"
           git push
